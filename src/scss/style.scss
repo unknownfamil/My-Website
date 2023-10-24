@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #764abc;
+}
+body{
+    background-color: black;
+    background: url('../img/20\ 1.png')50% / 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.alert{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.767);
+    font-size: 14px;
+    top: 0;
+    z-index: 100;
+    border: none;
+    padding: 10px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    ::backdrop{
+        backdrop-filter: blur(5px);
+    }
+}
+.close{
+    background: 0;
+    color: #764abc;
+    font-family: sans-serif;
+    border: 1px solid #764abc;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.massage{
+    color: #764abc;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 200%;
+    text-align: center;
+}
+.greetMassage{
+    color: #764abc;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #450ba3;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #764abc
+}
+.follow-div{
+    width: 20px;
+    height: 20px;
+    background-color: #764abc;
+    // box-shadow: 0 0 50px 25px #764abc;
+    // filter: blur(5px);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    pointer-events: none;
+}
+.loading{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #764abc;
+    border-top-color: aliceblue;
+    border-radius: 50%;
+    z-index: 110;
+    position: fixed;
+    animation: loading linear infinite 0.5s;
+    
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.await{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 209;
+    backdrop-filter: blur(50px);
+}
+@import 'header';
+@import 'media';
+@import 'homePage';
+@import 'firstPage';

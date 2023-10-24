@@ -1,0 +1,194 @@
+.header {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 0 10px black;
+    z-index: 1;
+    &__nav {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__nav-menu {
+        display: none;
+    }
+
+    &__nav-profile {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #764abc;
+        overflow: hidden;
+        border-radius: 50%;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__nav-ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__ul-li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: #764abc;
+            font-weight: bold;
+            position: relative;
+            
+            
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 3px;
+                left: 0;
+                bottom: -5px;
+                background-color: #764abc;
+                transform: scale(0);
+                transition: all 0.5s;
+                border-radius: 3px;
+            }
+            &:hover::after{
+                transform: scale(100%);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &__select {
+        cursor: pointer;
+        position: relative;
+        color: #764abc;
+        font-weight: bold;
+    }
+
+    &__select-btn {
+        color: #764abc;
+    }
+
+    &__select:hover {
+        div {
+            display: block;
+        }
+    }
+
+    &__select-text {
+        cursor: pointer;
+        font-weight: bold;
+        color: #764abc;
+
+        &:hover {
+            color: aliceblue;
+        }
+    }
+
+    &__select-block {
+        position: absolute;
+        display: none;
+        border: 1px solid #764abc;
+        padding: 10px 20px 10px 20px;
+        border-radius: 3px;
+    }
+
+    &__nav-login {
+        text-decoration: none;
+        border: 2px solid #764abc;
+        font-weight: bolder;
+        color: #764abc;
+        padding: 5px 15px;
+        border-radius: 25px;
+        transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        font-family: sans-serif;
+        background: 0;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #764abc;
+            border-radius: 25px;
+            transition: all 0.5s;
+            z-index: -1;
+            transform: translateX(-100%);
+        }
+
+        &:hover::before {
+            transform: translateX(0);
+        }
+    }
+    &__form{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 500px;
+        background: 0;
+        border: 1px solid #764abc;
+        backdrop-filter: blur(5px);
+        position: relative;
+        box-shadow: 2px 5px 15px black;
+        &::backdrop{
+            backdrop-filter: blur(5px);
+        }
+        input{
+            margin-top: 24px;
+            padding: 10px;
+            width: 70%;
+            background: 0;
+            border: 1px solid #764abc;
+            outline: none;
+        }
+        h1{
+            margin: 30px 0 20px 0;
+        }
+        a{
+            text-decoration: none;
+            color: dodgerblue;
+            font-size: 14px;
+            display: inline-block;
+            margin: 15px 0 15px 0;
+        }
+    }
+    
+    &__form-close{
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        text-decoration: none;
+        background: 0;
+        padding: 5px 10px;
+        color: #764abc;
+        &:hover{
+            color: red;
+        }
+    }
+    &__form-button{
+        width: 50%;
+        padding: 12px;
+        background: 0;
+        border: 1px solid #764abc;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+}

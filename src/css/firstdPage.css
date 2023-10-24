@@ -1,0 +1,10 @@
+.firstdPage {
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+.firstdPage__continer {
+  max-width: 600px;
+  width: 100%;
+  height: 350px;
+  border: 1px solid #764abc;
+}

@@ -1,0 +1,26 @@
+@media (max-width: 375px){
+    .header__nav-menu{
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .header__nav-ul{
+        position: absolute;
+        top: -150px;
+        background-color: black;
+        padding: 100px 0 20px 0;
+    }
+    .header__menu-active{
+        display: block;
+        top: 0;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        justify-content: center;
+        z-index: 1;
+        padding: 100px 0 20px 0;
+        transition: 0.5s linear;
+        transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+}

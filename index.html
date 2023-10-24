@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Web-Site-in-Js 👁</title>
+</head>
+
+<body>
+    <div class="follow-div"></div>
+   <div class="await">
+    <div class="loading"></div>
+   </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div title="Profile" class="header__nav-profile">
+                    <img src="./src/img/1.jpg" alt="">
+                </div>
+                <ul class="header__nav-ul">
+                    <li class="header__ul-li">
+                        <a title="Home" href="#">Home</a>
+                    </li>
+                    <li class="header__ul-li">
+                        <div title="All" class="header__select">
+                            All <span class="header__select-btn">▼</span>
+                            <div class="header__select-block">
+                                <span class="header__select-text">Projects</span>
+                                <span class="header__select-text">Projects</span>
+                                <span class="header__select-text">Projects</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__ul-li">
+                        <a title="Contact" href="#">Contact</a>
+                    </li>
+                </ul>
+                <dialog class="header__form">
+                    <center>
+                        <button autofocus title="Close" class="header__form-close">✖</button>
+                        <h1>Log In</h1>
+                        <p>(●'◡'●)</p>
+                        <input type="email" name="email" title="email" placeholder="email">
+                        <p>
+                            <input type="password" name="password" placeholder="password" title="password" id="">
+                        </p>
+                        <p>
+                            <a href="#">Help in password</a>
+                        </p>
+                        <button class="header__form-button" type="button">Log In</button>
+                    </center>
+                </dialog>
+                <button popovertarget="login" popovertargetaction="manual" title="Log in" class="header__nav-login">Log
+                    In</button>
+                <div title="Menu" class="header__nav-menu">&#127828;</div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="homePage">
+            <div class="container">
+                <div class="homePage__sliderContainer">
+                    <div class="homePage__sliderPosition">
+                        <img class="homePage__sliderCard" src="./src/img/1.jpg" alt="">
+                        <img class="homePage__sliderCard" src="./src/img/1.jpg" alt="">
+                        <img class="homePage__sliderCard" src="./src/img/1.jpg" alt="">
+                    </div>
+                    <button type="button" class="homePage__prev ">⬅</button>
+                    <button type="button" class="homePage__next ">➡</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="alert" open="open">
+        <form method="dialog">
+            <center class="greetMassage">
+                Hello!
+            </center>
+            <center class="massage">
+                I'm glad you saw my ptoject. <br>
+                I chose programming i am web developer and i am new in this field.
+                <br>
+                I am a citizen of Kyrgyzstan, i don't know English well.
+                <br> Please support.
+            </center>
+            <center><button class="close">OK</button></center>
+        </form>
+    </dialog>
+    
+    <section class="firstPage">
+        <div class="container">
+            <div class="firstPage__continer">
+                <div class="firstPage__tabs-container">
+                    <button class="firstPage__tab-btn firstPage__active-tab">First</button>
+                    <button class="firstPage__tab-btn">second</button>
+                    <button class="firstPage__tab-btn">Third</button>
+                </div>
+                <div class="firstPage__contents-container">
+                    <div class="firstPage__content firstPage__active-content">First</div>
+                    <div class="firstPage__content">Second</div>
+                    <div class="firstPage__content">Third</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondPage">
+        <div class="container">
+        </div>
+    </section>
+    
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
